@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>The five Daily Quotes</h1>
+    <h1>Daily Quotes</h1>
     <hr>
   
     <div class="row">
@@ -7,8 +7,8 @@
        
         <div *ngFor='let goal of goals;let i = index'>
           <div>
-            <h6 id={{i}} appStrikethrough>{{goal.name}} due on {{goal.completeDate|date|uppercase}}</h6>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+            <h6 id={{i}} appStrikethrough>{{goal.name}} Will be removed on {{goal.completeDate|date|uppercase}}</h6>
+            <button (click)='toggleDetails(i)' class="btn btn-primary">Author</button>
           </div>
   
           <div *ngIf='goal.showDescription'>
