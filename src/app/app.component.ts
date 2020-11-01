@@ -16,7 +16,5 @@ export class AppComponent {
     {id:6,name:'Plot my world domination plan'},
   ];
 
-  constructor(){
-    this.goals = ['Watch finding Nemo', 'Buy cookies', 'Get new phone case']
-  } 
+ 
 }
