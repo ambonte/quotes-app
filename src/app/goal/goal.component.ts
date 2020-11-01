@@ -7,6 +7,15 @@ import { Goal } from '../goal';
   styleUrls: ['./goal.component.css']
 })
 export class GoalComponent implements OnInit {
+  deleteGoal(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}?`)
+
+      if (toDelete){
+        this.goals.splice(index,1)
+      }
+    }
+  }
   completeGoal(isComplete, index){
     if (isComplete) {
       this.goals.splice(index,1);
