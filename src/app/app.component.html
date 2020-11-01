@@ -1,9 +1,10 @@
 <div>
   <h1>My Goals</h1>
+  <hr>
   <ul>
       <li *ngFor='let goal of goals'>
-        {{goal}}
+        {{goal.name}}
       </li>
   </ul>
-</div>>
+</div>
 <router-outlet></router-outlet>
