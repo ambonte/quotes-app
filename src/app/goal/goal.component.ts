@@ -44,7 +44,7 @@ export class GoalComponent implements OnInit {
     new Goal(3,'Every moment is a fresh beginning. ','T.S Eliot',new Date(2019,1,12)),
     new Goal(4,'Never regret anything that made you smile. ','Mark Twain',new Date(2019,11,18)),
     new Goal(5,'Everything you can imagine is real.',' Pablo Picasso',new Date(2019,2,14)),
-    new Goal(6,'Whatever you do, do it well.','Walt Disney',new Date(2019,3,14)),
+
   ];
 
   constructor() { }
