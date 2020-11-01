@@ -7,6 +7,9 @@ import { Goal } from '../goal';
   styleUrls: ['./goal.component.css']
 })
 export class GoalComponent implements OnInit {
+  toggleDetails(index){
+    this.goals[index].showDescription = !this.goals[index].showDescription;
+  }
   goals: Goal[] = [
     new Goal(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
     new Goal(2,'Buy Cookies','I have to buy cookies for the parrot'),
