@@ -16,7 +16,12 @@ export class GoalDetailComponent implements OnInit {
   goalComplete(complete:boolean){
     this.isComplete.emit(complete);
   }
-
+  upvote(){
+    this.goal.upvote+=1;
+  }
+  downvote(){
+    this.goal.downvote-=1;
+  }
   
   constructor() { }
 
